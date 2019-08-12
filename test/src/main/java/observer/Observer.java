@@ -1,11 +1,15 @@
 package observer;
 
-import javax.security.auth.Subject;
-
 public abstract class Observer {
 
+    /**
+     * 主题
+     */
     private WeatherSubject subject;
 
+    /**
+     * 抽象方法
+     */
     public abstract void update();
 
     public WeatherSubject getSubject() {
