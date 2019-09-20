@@ -1,25 +1,21 @@
 package test;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
-
 /**
  * Hello world!
- *
  */
-public class App 
-{
-    public static void main( String[] args )
+public class App {
+
+    static
     {
-        System.out.println( "Hello World!" );
+        System.out.println("ConstClass init!");
+    }
+    public static  final String HELLOWORLD = "hello world";
+}
 
-        Lock lock = new ReentrantLock();
-        lock.lock();
-
-        Condition condition = lock.newCondition();
-        condition.signal();
+  class NotInitialization
+{
+    public static void main(String[] args)
+    {
+        System.out.println(App.HELLOWORLD);
     }
 }

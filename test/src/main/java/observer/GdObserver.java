@@ -1,7 +1,7 @@
 package observer;
 
 /**
- * 监听器
+ * 监听器设置主题并向主题注册
  */
 public class GdObserver extends Observer {
 

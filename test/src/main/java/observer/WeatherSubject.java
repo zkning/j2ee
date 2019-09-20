@@ -5,6 +5,9 @@ import java.util.List;
 
 /**
  * 天气主题
+ *
+ * 主题 -> 观察者 （一对多）
+ * 主题状态变更发送更新通知观察者
  */
 public class WeatherSubject {
 
