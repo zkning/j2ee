@@ -23,7 +23,7 @@ public class ReadSource {
     public void notifity() {
         for (EventListener eventListener : listeners) {
             ReadListener readListener = (ReadListener) eventListener;
-            readListener.doRead(new ReadEvent(this));
+            readListener.handle(new ReadEvent(this));
         }
     }
 

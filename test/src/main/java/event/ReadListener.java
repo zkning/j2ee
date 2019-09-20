@@ -9,7 +9,7 @@ import java.util.EventListener;
 public class ReadListener implements EventListener {
 
 
-    public void doRead(ReadEvent readEvent) {
+    public void handle(ReadEvent readEvent) {
         ReadSource readSource = (ReadSource) readEvent.getSource();
         System.out.println("ReadListener event state ：" + readSource.getState());
     }
