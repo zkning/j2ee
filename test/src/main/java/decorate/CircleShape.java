@@ -1,5 +1,8 @@
 package decorate;
 
+/**
+ * 被装饰对象具体实现
+ */
 public class CircleShape implements Shape {
 
     @Override
